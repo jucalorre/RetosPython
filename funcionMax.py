@@ -14,10 +14,24 @@
 #  but WITHOUT ANY WARRANTY; without even the implied warranty of
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU General Public License for more details.
-#  
+# 
 #  You should have received a copy of the GNU General Public License
 #  along with this program; if not, write to the Free Software
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
 #  
-#  
+
+def Max(val1, val2):
+	if val1>val2:
+		print "El primer numero es mayor al segundo"
+	elif val1<val2:
+		print "El segundo numero es mayor al primero"
+	else:
+		print "Los dos numeros son iguales"
+		
+try:
+    val1=int(raw_input('Ingresa el primer valor'))
+    val2=int(raw_input('Ingresa el segundo valor'))
+except ValueError:
+    print "Not a number"
+Max(val1,val2)
