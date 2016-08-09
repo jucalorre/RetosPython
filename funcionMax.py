@@ -30,8 +30,9 @@ def Max(val1, val2):
 		print "Los dos numeros son iguales"
 		
 try:
-    val1=int(raw_input('Ingresa el primer valor'))
-    val2=int(raw_input('Ingresa el segundo valor'))
-except ValueError:
-    print "Not a number"
-Max(val1,val2)
+    val1=int(raw_input('Ingresa el primer valor: '))
+    val2=int(raw_input('Ingresa el segundo valor: '))
+    Max(val1,val2)
+except ValueError: #Captura los errores 
+    print "Alguno de los valores ingresados no es un número"
+
